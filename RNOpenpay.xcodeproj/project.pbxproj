@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1681AC1C1D80E0CC00374492 /* openpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1681AC1B1D80E0CC00374492 /* openpay.a */; };
+		1681AC1E1D80E0E300374492 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1681AC1D1D80E0E300374492 /* CoreLocation.framework */; };
+		169E77621D7E0FBB004B7E11 /* RNOpenpay.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 169E77611D7E0FBB004B7E11 /* RNOpenpay.h */; };
+		169E77641D7E0FBB004B7E11 /* RNOpenpay.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E77631D7E0FBB004B7E11 /* RNOpenpay.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		169E775C1D7E0FBB004B7E11 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				169E77621D7E0FBB004B7E11 /* RNOpenpay.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1681AC1B1D80E0CC00374492 /* openpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = openpay.a; sourceTree = "<group>"; };
+		1681AC1D1D80E0E300374492 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1681AC201D80E1EB00374492 /* DeviceCollectorSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceCollectorSDK.h; sourceTree = "<group>"; };
+		1681AC211D80E1EB00374492 /* OPAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPAddress.h; sourceTree = "<group>"; };
+		1681AC221D80E1EB00374492 /* OPCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPCard.h; sourceTree = "<group>"; };
+		1681AC231D80E1EB00374492 /* Openpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Openpay.h; sourceTree = "<group>"; };
+		1681AC241D80E1EB00374492 /* OPToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OPToken.h; sourceTree = "<group>"; };
+		169E775E1D7E0FBB004B7E11 /* libRNOpenpay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNOpenpay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		169E77611D7E0FBB004B7E11 /* RNOpenpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNOpenpay.h; sourceTree = "<group>"; };
+		169E77631D7E0FBB004B7E11 /* RNOpenpay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNOpenpay.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169E775B1D7E0FBB004B7E11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1681AC1E1D80E0E300374492 /* CoreLocation.framework in Frameworks */,
+				1681AC1C1D80E0CC00374492 /* openpay.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		169E77551D7E0FBB004B7E11 = {
+			isa = PBXGroup;
+			children = (
+				1681AC1D1D80E0E300374492 /* CoreLocation.framework */,
+				169E77601D7E0FBB004B7E11 /* RNOpenpay */,
+				169E775F1D7E0FBB004B7E11 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		169E775F1D7E0FBB004B7E11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169E775E1D7E0FBB004B7E11 /* libRNOpenpay.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		169E77601D7E0FBB004B7E11 /* RNOpenpay */ = {
+			isa = PBXGroup;
+			children = (
+				1681AC201D80E1EB00374492 /* DeviceCollectorSDK.h */,
+				1681AC211D80E1EB00374492 /* OPAddress.h */,
+				1681AC221D80E1EB00374492 /* OPCard.h */,
+				1681AC231D80E1EB00374492 /* Openpay.h */,
+				1681AC241D80E1EB00374492 /* OPToken.h */,
+				1681AC1B1D80E0CC00374492 /* openpay.a */,
+				169E77611D7E0FBB004B7E11 /* RNOpenpay.h */,
+				169E77631D7E0FBB004B7E11 /* RNOpenpay.m */,
+			);
+			path = RNOpenpay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		169E775D1D7E0FBB004B7E11 /* RNOpenpay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 169E77671D7E0FBB004B7E11 /* Build configuration list for PBXNativeTarget "RNOpenpay" */;
+			buildPhases = (
+				169E775A1D7E0FBB004B7E11 /* Sources */,
+				169E775B1D7E0FBB004B7E11 /* Frameworks */,
+				169E775C1D7E0FBB004B7E11 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNOpenpay;
+			productName = RNOpenpay;
+			productReference = 169E775E1D7E0FBB004B7E11 /* libRNOpenpay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		169E77561D7E0FBB004B7E11 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = corb;
+				TargetAttributes = {
+					169E775D1D7E0FBB004B7E11 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 169E77591D7E0FBB004B7E11 /* Build configuration list for PBXProject "RNOpenpay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 169E77551D7E0FBB004B7E11;
+			productRefGroup = 169E775F1D7E0FBB004B7E11 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				169E775D1D7E0FBB004B7E11 /* RNOpenpay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		169E775A1D7E0FBB004B7E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169E77641D7E0FBB004B7E11 /* RNOpenpay.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		169E77651D7E0FBB004B7E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		169E77661D7E0FBB004B7E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		169E77681D7E0FBB004B7E11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RNOpenpay",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		169E77691D7E0FBB004B7E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RNOpenpay",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		169E77591D7E0FBB004B7E11 /* Build configuration list for PBXProject "RNOpenpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169E77651D7E0FBB004B7E11 /* Debug */,
+				169E77661D7E0FBB004B7E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		169E77671D7E0FBB004B7E11 /* Build configuration list for PBXNativeTarget "RNOpenpay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				169E77681D7E0FBB004B7E11 /* Debug */,
+				169E77691D7E0FBB004B7E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 169E77561D7E0FBB004B7E11 /* Project object */;
+}
