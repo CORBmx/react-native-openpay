@@ -23,8 +23,8 @@ public class RNOpenpayManager extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void getDeviceSessionId(String merchantId, String apyKey, Boolean forProduction, Promise promise) {
-        Openpay openpay = new Openpay(merchantId, apyKey, forProduction);
+    public void getDeviceSessionId(String merchantId, String apiKey, Boolean forProduction, Promise promise) {
+        Openpay openpay = new Openpay(merchantId, apiKey, forProduction);
 
         String deviceSessionId = openpay.getDeviceCollectorDefaultImpl()
             .setup(reactContext.getCurrentActivity());

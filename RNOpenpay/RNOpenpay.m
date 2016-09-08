@@ -14,13 +14,13 @@
 RCT_EXPORT_MODULE();
 
 RCT_EXPORT_METHOD(getDeviceSessionId:(NSString *)merchantId
-                          withApyKey:(NSString *)apyKey
+                          withApiKey:(NSString *)apiKey
                        forProduction:(BOOL)isProduction
                             resolver:(RCTPromiseResolveBlock)resolve
                             rejecter:(RCTPromiseRejectBlock)reject)
 {
     Openpay *openpayAPI = [[Openpay alloc] initWithMerchantId:merchantId
-                                                       apyKey:apyKey
+                                                       apyKey:apiKey
                                              isProductionMode:isProduction];
 
     NSString *sessionId = [openpayAPI createDeviceSessionId];
