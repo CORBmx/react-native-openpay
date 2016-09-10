@@ -28,6 +28,10 @@ android {
 dependencies {
     compile 'com.facebook.react:react-native:+'
     compile files('libs/devicecollector-sdk-2.5.jar')
-    compile 'com.google.http-client:google-http-client-android:1.22.0'
-    compile 'com.google.http-client:google-http-client-jackson2:1.22.0'
+    compile('com.google.http-client:google-http-client-android:1.22.0') {
+        exclude module: 'httpclient'
+    }
+    compile('com.google.http-client:google-http-client-jackson2:1.22.0') {
+        exclude module: 'httpclient'
+    }
 }
