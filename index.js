@@ -1,9 +1,11 @@
 import { NativeModules } from 'react-native';
 
 const RNOpenpay = {
-    getDeviceSessionId(merchantId, apiKey, production = false) {
-        return NativeModules.RNOpenpayManager.getDeviceSessionId(merchantId, apiKey, production);
-    }
+    setup(merchantId, apiKey, production = false) {
+        NativeModules.RNOpenpayManager.setup(merchantId, apiKey, production = false)
+    },
+    createCardToken: NativeModules.RNOpenpayManager.createCardToken,
+    getDeviceSessionId: NativeModules.RNOpenpayManager.getDeviceSessionId,
 }
 
 export default RNOpenpay;
