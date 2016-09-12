@@ -34,10 +34,10 @@ RCT_EXPORT_METHOD(createCardToken:(NSDictionary *)cardJson
 {
     OPCard *card = [[OPCard alloc] init];
     card.holderName = cardJson[@"holder_name"];
-    card.number = cardJson[@"holder_name"];
-    card.expirationMonth = cardJson[@"holder_name"];
-    card.expirationYear = cardJson[@"holder_name"];
-    card.cvv2 = cardJson[@"holder_name"];
+    card.number = cardJson[@"card_number"];
+    card.expirationMonth = cardJson[@"expiration_month"];
+    card.expirationYear = cardJson[@"expiration_year"];
+    card.cvv2 = cardJson[@"cvv2"];
 
 
     [_openpayAPI createTokenWithCard:card
@@ -45,7 +45,8 @@ RCT_EXPORT_METHOD(createCardToken:(NSDictionary *)cardJson
             resolve(token.id);
         } failure:^(NSError *error) {
             NSString *codeWithDomain = [NSString stringWithFormat:@"E%@%zd", error.domain.uppercaseString, error.code];
-            reject(codeWithDomain, error.localizedDescription, error);
+            NSString *description = error.userInfo[@"errors"][0];
+            reject(codeWithDomain, description, error);
     }];
 }
 
