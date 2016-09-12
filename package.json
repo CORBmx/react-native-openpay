@@ -1,6 +1,6 @@
 {
   "name": "react-native-openpay",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A react-native wrapper for openpay movile sdk",
   "main": "index.js",
   "scripts": {
