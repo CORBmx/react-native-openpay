@@ -47,4 +47,3 @@ get the device session id, returns a promise, the result is the session id strin
 ```javascript
 openpay.getDeviceSessionId().then(sessionId => console.log(sessionId));
 ```
-Create README.md
