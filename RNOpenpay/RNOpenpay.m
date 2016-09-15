@@ -39,7 +39,6 @@ RCT_EXPORT_METHOD(createCardToken:(NSDictionary *)cardJson
     card.expirationYear = cardJson[@"expiration_year"];
     card.cvv2 = cardJson[@"cvv2"];
 
-
     [_openpayAPI createTokenWithCard:card
         success:^(OPToken *token) {
             resolve(token.id);
@@ -53,7 +52,10 @@ RCT_EXPORT_METHOD(createCardToken:(NSDictionary *)cardJson
 RCT_EXPORT_METHOD(getDeviceSessionId:(RCTPromiseResolveBlock)resolve
                             rejecter:(RCTPromiseRejectBlock)reject)
 {
-    resolve([_openpayAPI createDeviceSessionId]);
+    if (!self.deviceSessionId) {
+        _deviceSessionId = [_openpayAPI createDeviceSessionId];
+    }
+    resolve(self.deviceSessionId);
 }
 
 - (dispatch_queue_t)methodQueue

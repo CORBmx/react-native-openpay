@@ -9,4 +9,7 @@
 #import "RCTBridgeModule.h"
 
 @interface RNOpenpayManager : NSObject <RCTBridgeModule>
+
+@property (readonly) NSString *deviceSessionId;
+
 @end
