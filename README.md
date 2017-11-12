@@ -8,7 +8,7 @@ Obj-c, just enough to ge to this point :), if you know a better way to do someth
 have fun :).
 
 ## Installing
-requires version >= 0.31.0 of `react-native`
+requires version >= 0.47 of `react-native`
 ```
 npm install -S react-native-openpay
 ```
