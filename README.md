@@ -18,6 +18,62 @@ then link the library to Android/iOS native projects (i havent tested `rnpm` for
 react-native link react-native-openpay
 ```
 
+## Manually link
+### Android
+* in `android/app/build.gradle`:
+```diff
+dependencies {
+    ...
+    compile "com.facebook.react:react-native:+"  // From node_modules
++   compile project(':react-native-openpay')
+}
+```
+* in `android/settings.gradle`:
+```diff
+...
+include ':app'
++ include ':react-native-openpay'
++ project(':react-native-openpay').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-openpay/android')
+
+```
+
+**With React Native 0.29+**
+* in `MainApplication.java`
+```diff
++ import com.RNOpenpay.RNOpenpayPackage;
+
+public class MainApplication extends Application implements ReactApplication {
+    // .......
+    @Override
+    protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
++         new RNOpenpayPackage(),
+          new MainReactPackage()
+      );
+    }
+    
+    // ......
+}
+```
+**With older versions of React Native:**
+* in `MainActivity.java`
+```diff
++ import com.RNOpenpay.RNOpenpayPackage;
+
+public class MainActivity extends ReactActivity {
+    // ......
+    
+    @Override
+    protected List<ReactPackage> getPackages() {
+      return Arrays.<ReactPackage>asList(
++       new RNOpenpayPackage(),
+        new MainReactPackage()
+      );
+    }
+    
+    // .....
+}
+```
 ## Usage
 
 before doing anything, setup your instance with your credentials:
