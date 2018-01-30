@@ -20,8 +20,25 @@ react-native link react-native-openpay
 
 ## Manually link
 ### Android
+* in `android/app/build.gradle`:
+```diff
+dependencies {
+    ...
+    compile "com.facebook.react:react-native:+"  // From node_modules
++   compile project(':react-native-openpay')
+}
+```
+* in `android/settings.gradle`:
+```diff
+...
+include ':app'
++ include ':react-native-openpay'
++ project(':react-native-openpay').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-openpay/android')
+
+```
+
 **With React Native 0.29+**
-* In `MainApplication.java`
+* in `MainApplication.java`
 ```diff
 + import com.RNOpenpay.RNOpenpayPackage;
 
@@ -39,7 +56,7 @@ public class MainApplication extends Application implements ReactApplication {
 }
 ```
 **With older versions of React Native:**
-* In `MainActivity.java`
+* in `MainActivity.java`
 ```diff
 + import com.RNOpenpay.RNOpenpayPackage;
 
